@@ -17,10 +17,22 @@ public class Section {
     public String getSectionName() {
         return sectionName;
     }
+    public void setSectionName(String sectionName) {
+        this.sectionName = sectionName;
+    }
     public int getMaxCapacity() {
         return maxCapacity;
     }
-
-
-
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+    public Instructor getInstructor() {
+        return instructor;
+    }
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+    public ArrayList<Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
 }

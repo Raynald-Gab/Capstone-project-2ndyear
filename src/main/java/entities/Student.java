@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.Arraylist;
-
 public class Student {
 
     private String StudentID;
@@ -9,7 +7,7 @@ public class Student {
     private String email;
     private double balance;
 
-    public Student(String StudentID, String name, String email, double balance) {
+    public Student(String StudentID, String name, String email) {
         this.StudentID = StudentID;
         this.name = name;
         this.email = email;
@@ -18,6 +16,9 @@ public class Student {
     }
     public String getStudentID() {
         return StudentID;
+    }
+    public void setStudentID(String StudentID) {
+        this.StudentID = StudentID;
     }
     public String getName() {
         return name;
