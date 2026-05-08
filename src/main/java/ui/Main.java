@@ -33,7 +33,6 @@ public class Main {
         ccs.addSection(IT2C);
         ccs.addSection(IT2D);
 
-        // pre-load courses (silent)
         courseService.addCourse(new Course("INFOMAN", "Information Management", 3));
         courseService.addCourse(new Course("INTEPROG", "Integrative Programming", 3));
         courseService.addCourse(new Course("SYSDE", "System Development", 3));
@@ -43,7 +42,6 @@ public class Main {
         courseService.addCourse(new Course("PE", "Physical Education", 2));
         courseService.addCourse(new Course("LINUSYST", "Linux System", 3));
 
-        // pre-load instructors (silent)
         instructorService.addInstructor(new Instructor("T01", "Ms. Vanessa", "CIT"));
         instructorService.addInstructor(new Instructor("T02", "Sir Febbraio", "CIT"));
         instructorService.addInstructor(new Instructor("T03", "Sir Dennis", "CIT"));
