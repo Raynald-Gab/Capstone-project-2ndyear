@@ -12,12 +12,10 @@ public class CourseServicelmpl implements ICourseService {
     public void addCourse(Course course) {
         for (Course c : courses) {
             if (c.getCourseCode().equals(course.getCourseCode())) {
-                System.out.println("Error: Course code " + course.getCourseCode() + " already exists!");
-                return;
+                return; // silent, no print
             }
         }
         courses.add(course);
-        System.out.println("Course added successfully: " + course.getCourseCode());
     }
 
     @Override
@@ -44,16 +42,12 @@ public class CourseServicelmpl implements ICourseService {
     }
 
     @Override
-    public ArrayList<Course> getAllCourses() {
-        return courses;
-    }
+    public ArrayList<Course> getAllCourses() { return courses; }
 
     @Override
     public Course findCourseByCode(String courseCode) {
         for (Course c : courses) {
-            if (c.getCourseCode().equals(courseCode)) {
-                return c;
-            }
+            if (c.getCourseCode().equalsIgnoreCase(courseCode)) return c;
         }
         return null;
     }

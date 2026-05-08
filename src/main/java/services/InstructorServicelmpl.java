@@ -13,12 +13,10 @@ public class InstructorServicelmpl implements IlnstructorService {
     public void addInstructor(Instructor instructor) {
         for (Instructor i : instructors) {
             if (i.getInstructorId().equals(instructor.getInstructorId())) {
-                System.out.println("Error: Instructor ID " + instructor.getInstructorId() + " already exists!");
-                return;
+                return; // silent, no print
             }
         }
         instructors.add(instructor);
-        System.out.println("Instructor added successfully: " + instructor.getName());
     }
 
     @Override

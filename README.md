@@ -23,24 +23,17 @@ ___
    - [4] View all -> Back
 
 
-2. Manage Course
-   - [1] Add -> You will choose if what course/subject you will take on that section for example. IT2C inteprog, infoman 
-   - [2] Update 
-   - [3] Remove  
-   - [4] View All -> exit or back  
+2. Manage Course 
+   - -> makikita mo here yung Courses, tuition and profs 
 
 
 3. Manage Instructors
-   - [1] Add 
-   - [2] Assign to Section 
-   - [3] View Details 
-   - [4] View All 
+   -You can see here the name of your Professor and ano yung handle nilang subject 
 
 
 4. Enroll Student in Section 
-   - Student ID  ->
-   - Sections ->
-   - Section  ->
+   - Student ID  -> Enter the Student ID That is provided to you 
+   - Sections -> Choose which section 
    
 
 
@@ -50,7 +43,7 @@ ___
 
 6. Tuition and Payment
    - [1] Calculate Fee 
-     - -> Student ID: -> Course Code(Name nung Course) example BSIT -> Fee calculated  
+     - -> Student ID: -> Tuition Price
    - [2] Make Payment 
      - Student ID: -> Payment -> balance Remaining 
    - [3] Check Balance
