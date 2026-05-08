@@ -220,9 +220,7 @@ public class Main {
             Student student = studentService.findStudentById(sid);
             if (student == null) { System.out.println("Student not found!"); return; }
 
-            if (c == 1) {
-                // compute total fee for all subjects
-                student.setBalance(TOTAL_TUITION);
+            if (c == 1) {student.setBalance(TOTAL_TUITION);
                 System.out.println("========================================");
                 System.out.println("  TUITION FEE BREAKDOWN");
                 System.out.println("========================================");
